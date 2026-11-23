@@ -1,0 +1,19 @@
+{
+  "name": "omin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo para a plataforma omin (back + front)",
+  "workspaces": [
+    "back",
+    "front"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -p \"[{name}]\" -c \"cyan,magenta\" \"npm run dev --workspace=back\" \"npm run dev --workspace=front\"",
+    "build": "npm run build --workspace=back && npm run build --workspace=front",
+    "test": "npm run test --workspace=back",
+    "lint": "npm run lint --workspace=back && npm run lint --workspace=front"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

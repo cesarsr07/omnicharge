@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #080c14;
+  --foreground: #f8fafc;
+}
+
+html.dark {
+  --background: #080c14;
+  --foreground: #f8fafc;
+  color-scheme: dark;
+}
+
+html.light {
+  --background: #f1f5f9;
+  --foreground: #0f172a;
+  color-scheme: light;
+}
+
+html.light body {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+/* Light Theme Card, Modal & Table Container Overrides */
+html.light .bg-slate-900\/60,
+html.light .bg-slate-900\/70,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/90,
+html.light .bg-slate-900\/95,
+html.light .bg-slate-900 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Light Theme Modal Backdrop */
+html.light .bg-slate-950\/60,
+html.light .bg-slate-950\/80 {
+  background-color: rgba(15, 23, 42, 0.4) !important;
+}
+
+/* Light Theme Form Inputs, Selects & Textareas - Clean White Background */
+html.light input,
+html.light select,
+html.light textarea,
+html.light .bg-slate-950\/70,
+html.light .bg-slate-950\/80,
+html.light .bg-slate-950\/90,
+html.light .bg-slate-950 {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+html.light input:focus,
+html.light select:focus,
+html.light textarea:focus {
+  background-color: #ffffff !important;
+  border-color: #2563eb !important;
+  outline: none !important;
+}
+
+/* Light Mode Table Headers */
+html.light thead,
+html.light thead tr {
+  background-color: #f8fafc !important;
+  color: #475569 !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Light Mode Text Overrides */
+html.light .text-slate-100,
+html.light .text-slate-200 {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-300,
+html.light .text-slate-400 {
+  color: #475569 !important;
+}
+
+/* Light Mode Close & Icon Buttons */
+html.light .bg-slate-800\/60,
+html.light .bg-slate-800\/80,
+html.light .bg-slate-800\/90,
+html.light .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+  color: #334155 !important;
+}
+
+html.light .bg-slate-800\/60:hover,
+html.light .bg-slate-800\/80:hover,
+html.light .bg-slate-800:hover {
+  background-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080c14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
