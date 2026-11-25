@@ -66,7 +66,7 @@ export default function LoginPage() {
           <div>
             <label className="block text-xs font-bold text-slate-300 mb-1 flex items-center gap-1">
               <Mail className="w-3.5 h-3.5 text-blue-400" />
-              <span>E-mail</span>
+              <span>E-mail teste de testa</span>
             </label>
             <input
               type="email"
