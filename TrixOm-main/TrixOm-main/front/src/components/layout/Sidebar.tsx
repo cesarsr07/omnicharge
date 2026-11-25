@@ -12,6 +12,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Settings,
+  Sparkles,
 } from 'lucide-react';
 import { useAuth } from '../../contexts/auth-context';
 import { ProfilePopover } from '../ui/ProfilePopover';
@@ -28,6 +29,7 @@ export const Sidebar: React.FC = () => {
     { label: 'Extrato', icon: Receipt, href: '/extrato' },
     { label: 'Inventário', icon: Package, href: '/inventario' },
     { label: 'Contatos', icon: Users, href: '/contatos' },
+    { label: 'Assistente IA', icon: Sparkles, href: '/assistente' },
   ];
 
   const getInicial = (nome?: string) => {

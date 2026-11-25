@@ -11,6 +11,7 @@ import {
   Users,
   User,
   LogOut,
+  Sparkles,
 } from 'lucide-react';
 import { useAuth } from '../../contexts/auth-context';
 import { ProfilePopover } from '../ui/ProfilePopover';
@@ -27,6 +28,7 @@ export const BottomNav: React.FC = () => {
     { label: 'Extrato', icon: Receipt, href: '/extrato' },
     { label: 'Inventário', icon: Package, href: '/inventario' },
     { label: 'Contatos', icon: Users, href: '/contatos' },
+    { label: 'IA', icon: Sparkles, href: '/assistente' },
   ];
 
   const handleLogout = () => {
